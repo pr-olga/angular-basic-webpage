@@ -1,0 +1,83 @@
+
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark  scrolling-navbar" [containerInside]="false">
+    <logo>
+        <a class="logo navbar-brand" routerLink="/"><strong>TestSeite</strong></a>
+    </logo>
+    <links>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item waves-dark" mdbRippleRadius>
+                <a class="nav-link" routerLink="/">Home</a>
+            </li>
+            <li class="nav-item waves-dark" mdbRippleRadius>
+                <a class="nav-link" routerLink="/bewerbungstipps">Seite1</a>
+            </li>
+            <li class="nav-item waves-dark"  mdbRippleRadius>
+				<a class="nav-link" routerLink="/ueber-uns">Seite2</a>
+            </li>
+            <li class="nav-item waves-dark" mdbRippleRadius>
+				<a class="nav-link" routerLink="/kontakt">Seite3</a>
+            </li>
+        </ul>
+    </links>
+</mdb-navbar>
+<!-- Main -->
+<main>
+
+      
+
+<!--Carousel Wrapper-->
+<mdb-carousel  >
+    <mdb-slide>
+       <img class="d-block w-100 view hm-black-light" src="http://www.p52366.de/test/images/Bild_Home.jpg" alt="First slide">
+        <div class="carousel-caption">
+            <h3 class="h3-responsive">Herzlich Willkommen</h3>
+            <p>JLoremipsum</p>
+        </div>
+    </mdb-slide>
+</mdb-carousel>
+<!--/.Carousel Wrapper-->
+       
+                   
+  
+       
+  <div class="container">
+   
+         
+         <router-outlet></router-outlet>   
+         
+          </div>
+</main>
+<!-- /.Main -->
+       
+       
+<!--Footer-->
+<footer class="footer page-footer center-on-small-only">
+
+    <!--Footer Links-->
+    <div class="container">
+        <div class="row">
+            <!--Second column-->
+            <div class="footer__center-column">
+            <div class="col-md-12">
+               <ul class="footer__links footer__links--inline">
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                </ul>
+            </div>    
+            </div>
+            
+            <!--/.Second column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid">
+             Copyright © 2018 TestSeite
+        </div>
+    </div>
+    <!--/.Copyright-->
+</footer>
+<!--/.Footer-->
+        

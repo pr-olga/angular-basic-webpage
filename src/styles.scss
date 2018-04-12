@@ -1,0 +1,320 @@
+/* ==========================================================================
+   BEGIN: Global
+========================================================================== */
+
+
+/* BEGIN: Color
+========================================================================== */
+
+$font-color: #10426E;
+$font-color-light: #165c9a;
+$dark-color: #263238;
+$neu-grau: #575757;
+$neu-rot: #e62a4a;
+$neu-gruen: #4cad33;
+$neu-tuerkis: #059ead;
+
+/* END: Color
+========================================================================== */
+
+
+/* BEGIN: Typo
+========================================================================== */
+
+h1 {
+	font-size: 32px;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 1.75rem;
+	font-weight: 300;
+}
+
+.h3{
+	&--duen {
+		font-size: 1.75rem;
+		font-weight: 300;
+	}
+
+	&--fett {
+		font-size: 22px;
+		font-weight: 500;
+	}
+}
+
+
+
+/* END: Typo
+========================================================================== */
+
+
+/* BEGIN: Buttons
+========================================================================== */
+
+.btn {
+	&-primary {
+		background-color: $font-color !important;
+	}
+	&-primary:hover {
+		background-color: $font-color-light !important;
+	}
+	&-link:hover,
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+
+/* END: Buttons
+========================================================================== */
+
+
+/* ==========================================================================
+   END: Global
+========================================================================== */
+
+
+/* ==========================================================================
+   BEGIN: Layout
+========================================================================== */
+
+
+/* BEGIN: Index
+========================================================================== */
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 6rem;
+	margin: 0;
+}
+
+main {
+	min-height: 100%;
+}
+
+section {
+	margin: 100px 0px;
+}
+
+.fa {
+	color: $font-color !important;
+}
+
+.background--blue {
+	background-color: $font-color;
+	color: #fff;
+}
+
+
+/* END: Index
+========================================================================== */
+
+
+/* BEGIN: Nav
+========================================================================== */
+
+.navbar {
+	background-color: transparent;
+	li:not(last-child) {
+		margin-right: 10px;
+	}
+	a {
+		color: $dark-color !important;
+		font-weight: 400;
+	}
+}
+
+.top-nav-collapse {
+	background-color: $neu-grau;
+	a {
+		color: #fff !important;
+		font-weight: 300;
+	}
+}
+
+.carousel {
+	img {
+		max-height: 400px;
+	}
+}
+
+
+/* END: Nav
+========================================================================== */
+
+
+/* BEGIN: Footer
+========================================================================== */
+
+footer {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	width: 100%;
+	height: 100px;
+	display: block;
+	&__center-column {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	&__links--inline {
+		li {
+			display: inline;
+			margin-right: 10px;
+		}
+	}
+}
+
+.page-footer,
+.footer-copyright {
+	background-color: $neu-grau !important;
+	line-height: 1 !important;
+}
+
+
+/* END: Footer
+========================================================================== */
+
+
+/* ==========================================================================
+   END: Layout
+========================================================================== */
+
+
+/*BEGIN: Card*/
+
+#accordion {
+	max-width: 750px;
+	margin-top: 28px;
+	.card {
+		max-width: 750px;
+		margin-top: 5px;
+		&-header {
+			background-color: #fff;
+		}
+		.btn {
+			color: $font-color !important;
+		}
+	}
+	i {
+		margin-right: 20px;
+		fonst-size: 34px;
+	}
+}
+
+.card-header {
+	padding: 0px;
+}
+
+
+/*END: Card*/
+
+
+/*BEGIN: Einstieg*/
+
+.feature-box {
+	.feature-title {
+		font-weight: 500;
+	}
+	.fa {
+		color: $font-color !important;
+		font-size: 28px !important;
+	}
+}
+
+
+/*END: Einstieg*/
+
+
+/* ==========================================================================
+   BEGIN: Templates
+========================================================================== */
+
+
+/* BEGIN: Ueber uns
+========================================================================== */
+
+.ueber-uns {
+	h1 {
+		font-size: 32px;
+	}
+	.lead {
+		margin: 30px 0px;
+	}
+	.btn {
+		font-size: 0.9rem;
+	}
+	.card {
+		&-header {
+			cursor: pointer;
+		}
+		&-body {
+			display: none;
+			padding-left: 2.4rem;
+			&--show {
+				display: block;
+			}
+		}
+	}
+}
+
+
+/* END: Ueber uns
+========================================================================== */
+
+
+/* BEGIN: Kontakt
+========================================================================== */
+
+.contact {
+	ul {
+		padding-left: 0px;
+		margin-left: 0px;
+		list-style: none;
+		li {
+			margin-top: 50px;
+			&:last-child {
+				margin-bottom: 75px;
+			}
+		}
+	}
+}
+
+
+/*  END: Kontakt
+========================================================================== */
+
+
+/* ==========================================================================
+   END: Templates
+========================================================================== */
+
+
+/* ==========================================================================
+   BEGIN: Medias
+========================================================================== */
+
+@media only screen and (max-width: 768px) {
+	.navbar {
+		background-color: $neu-grau;
+		color: #fff;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+}
+
+
+/* ==========================================================================
+   END: Medias
+========================================================================== */
